@@ -1,0 +1,250 @@
+:root {
+  --warna1: #f2f0e7;
+  --warna2: #cf6e38;
+  --warna3: #5e8494;
+}
+
+/* clearing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body */
+body {
+  font-family: "Playfair Display", serif;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 7%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-container .logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.navbar-container .logo span {
+  color: var(--warna2);
+}
+
+.navbar-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navbar-container .nav-list ul li {
+  list-style-type: none;
+}
+
+.navbar-container .nav-list ul li a:hover {
+  color: var(--warna2);
+}
+
+/* main */
+main {
+  margin-top: 15%;
+}
+
+main .content {
+  padding: 0.75rem 7%;
+}
+
+.content-description .title {
+  padding: 0 20%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.content-description .description {
+  padding: 1rem 20%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.content-image {
+  margin-top: 10%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-image img {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  margin-top: 2rem;
+  display: flex;
+  background-color: var(--warna2);
+}
+
+aside .about-me {
+  padding-left: 7%;
+  padding-bottom: 2rem;
+}
+.about-me .title {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.about-me .description {
+  padding-top: 1rem;
+  padding-right: 1 rem;
+  font-size: 1.2rem;
+}
+
+aside button {
+  background-color: var(--warna2);
+  border: 1px solid;
+  color: black;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+aside button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+aside img {
+  padding-right: 7%;
+  width: 30%;
+  height: 30%;
+  margin: 2rem;
+  margin-right: 0;
+}
+
+main .visit {
+  background-color: var(--warna3);
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.visit .title {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main .opening {
+  text-align: center;
+}
+.opening p {
+  margin-top: 1rem;
+}
+
+.opening button {
+  background-color: var(--warna3);
+  border: 1px solid;
+  color: black;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.opening button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* footer */
+footer {
+  background-color: var(--warna1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+footer .footer-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer .footer-list ul li {
+  list-style-type: none;
+}
+
+footer .footer-list ul li a:hover {
+  color: var(--warna2);
+}
+footer p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* media queries */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+
+  iframe {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  iframe {
+    width: 375px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+
+  iframe {
+    width: 200px;
+    height: 150px;
+  }
+}
